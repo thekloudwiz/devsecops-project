@@ -1,0 +1,25 @@
+aws_region = "eu-west-1"
+vpc_cidr   = "10.1.0.0/16"
+subnet_cidrs = [
+  "10.1.1.0/24",
+  "10.1.2.0/24"
+]
+availability_zones_count = 2  # Number of AZs to use
+allowed_cidr_blocks = ["10.0.0.0/8"]
+alb_https_listener_port = 443
+container_port = 3000
+portfolio_domain_name = "portfolio.thekloudwiz.com"
+primary_domain_name = "thekloudwiz.com"
+wildcard_domain_name = "*.thekloudwiz.com"
+github_org  = "isaactanddoh"
+infra_repo = "devsecops-project"
+app_repo = "portfolio-app"
+alert_email_address = "thekloudwiz+staging@gmail.com"
+security_alert_email_address = "thekloudwiz+alerts@gmail.com"
+flow_logs_retention_days = 14  # Keep logs for 2 weeks in staging
+cost_center = "staging"
+container_user = "1000:1000"
+project_name = "devsecops"
+owner = "isaactanddoh"
+environment = "staging"
+iam_cert_name = "portfolio-thekloudwiz-com" 

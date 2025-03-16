@@ -1,0 +1,25 @@
+aws_region = "eu-west-1"
+vpc_cidr   = "10.0.0.0/16"
+subnet_cidrs = [
+  "10.0.1.0/24",
+  "10.0.2.0/24"
+]
+availability_zones_count = 2  # Number of AZs to use
+allowed_cidr_blocks = ["0.0.0.0/0"]  # Should be restricted in prod
+alb_https_listener_port = 443
+container_port = 3000
+portfolio_domain_name = "portfolio.thekloudwiz.com"
+primary_domain_name = "thekloudwiz.com"
+wildcard_domain_name = "*.thekloudwiz.com"
+github_org  = "isaactanddoh"
+infra_repo = "devsecops-project"
+app_repo = "portfolio-app"
+alert_email_address = "thekloudwiz+dev@gmail.com"
+security_alert_email_address = "thekloudwiz+alerts@gmail.com"
+flow_logs_retention_days = 7  # Keep logs for 1 week in dev 
+cost_center = "dev"
+container_user = "1000:1000"
+project_name = "devsecops"
+owner = "isaactanddoh"
+environment = "dev"
+iam_cert_name = "portfolio-thekloudwiz-com"
