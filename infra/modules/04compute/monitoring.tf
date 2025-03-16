@@ -72,11 +72,11 @@ resource "aws_cloudwatch_dashboard" "main" {
 
         properties = {
           metrics = [
-            ["AWS/ECS", "CPUUtilization", "ClusterName", local.ecs_cluster_name, { "stat": "Average" }],
-            ["AWS/ECS", "MemoryUtilization", "ClusterName", local.ecs_cluster_name, { "stat": "Average" }]
+            ["AWS/ECS", "CPUUtilization", "ClusterName", local.ecs_cluster_name, { "stat": "Sum" }],
+            ["AWS/ECS", "MemoryUtilization", "ClusterName", local.ecs_cluster_name, { "stat": "Sum" }]
           ]
-          period = 300
-          stat   = "Average"
+          period = 120
+          stat   = "Sum"
           region = var.aws_region
           title  = "ECS Cluster Utilization"
         }
