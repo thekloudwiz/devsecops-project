@@ -152,16 +152,16 @@ tfplan.json
 
 # Environment files
 *.tfvars
-# terraform.*
+terraform.*
 
 # Local files
 .DS_Store
 *.log
 
 # Ingnore files in the infra/environments folder
-# environments\*
-# infra/environments/*
-# infra/environments/
+environments\*
+infra/environments/*
+infra/environments/
 
 # Ignore files in the s3 folder
 s3/*
