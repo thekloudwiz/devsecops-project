@@ -102,7 +102,7 @@ jobs:
       run: terraform workspace select -or-create ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.environment || github.base_ref }}
 
     - name: Download Terraform Plan
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v5
       with:
         name: tfplan
         path: infra
