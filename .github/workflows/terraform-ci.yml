@@ -53,7 +53,7 @@ jobs:
           sudo mv opa /usr/local/bin/
 
       - name: Configure AWS Credentials for Tests
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v5
         with:
           role-to-assume: ${{ secrets.IAM_ROLE }}
           aws-region: eu-west-1
